@@ -1,0 +1,44 @@
+.hero {
+  background: var(--hero-color-bg);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: rgba(47, 48, 58, 0.4);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/meeting.jpg);
+}
+
+.hero__title {
+  width: 696px;
+  height: 120px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--hero-color-title);
+  margin: 0px 0px 30px 235px;
+}
+
+.hero__btn {
+  min-width: 200px;
+  height: 50px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--hero-color-btn);
+  background-color: var(--hero-color-bgh);
+  border-radius: 4px;
+  border-width: 0;
+  cursor: pointer;
+}

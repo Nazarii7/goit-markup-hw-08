@@ -1,0 +1,187 @@
+.footer {
+  background-color: var(--footer-color-bg);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-right: 0px;
+  .container {
+    display: flex;
+  }
+}
+
+.footer__logo {
+  color: var(--fooret-color-logo);
+  margin-bottom: 20px;
+}
+
+.footer__logo--light {
+  color: var(--fooret-color-words);
+}
+
+.footer__address {
+  margin-right: 70px;
+}
+
+.address__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--fooret-color-text);
+  margin-bottom: 9px;
+}
+
+.address__mailto {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-color-link);
+  display: block;
+  margin-bottom: 9px;
+  transition: 250ms linear;
+  &:hover,
+  &:focus {
+    color: var(--hover-focus);
+  }
+}
+
+.address__tel {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-color-link);
+  transition: 250ms linear;
+  &:hover,
+  &:focus {
+    color: var(--hover-focus);
+  }
+}
+
+.join {
+  max-width: 206px;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+}
+
+.join__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.join__list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.join__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.join__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 250ms linear;
+  &:hover {
+    background-color: #2196f3;
+  }
+  &:focus {
+    background-color: #2196f3;
+  }
+}
+
+.join__icon {
+  fill: var(--fooret-color-words);
+  .join__link:hover & {
+    fill: var(--fooret-color-words);
+  }
+}
+
+.signature {
+  position: relative;
+}
+
+.signature__field {
+  position: absolute;
+  top: -94px;
+  right: 10px;
+  margin-left: 93px;
+}
+
+.signature__input {
+  position: absolute;
+  top: 3px;
+  left: -577px;
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: #ffffff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+}
+
+.signature__text {
+  position: absolute;
+  top: -25px;
+  left: -573px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.signature__button {
+  position: absolute;
+  top: 3px;
+  right: 7px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding-left: 29px;
+  padding-right: 62px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 12px;
+  color: #ffffff;
+  border-radius: 4px;
+  border: 2px solid #2196f3;
+  background-color: #2196f3;
+  cursor: pointer;
+}
+
+.signature__mark {
+  position: absolute;
+  top: -59px;
+  right: 34px;
+  margin-top: 13px;
+  margin-left: 10px;
+  fill: #ffffff;
+}

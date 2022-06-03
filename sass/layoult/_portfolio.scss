@@ -1,0 +1,128 @@
+.offer {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.offer-list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.offer-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.offer-btn {
+  height: 38px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--about-color-title);
+  border-radius: 4px;
+  border-width: 0;
+  padding-right: 22px;
+  padding-left: 22px;
+  transition: 250ms linear;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    color: var(--hero-color-btn);
+    background-color: var(--hero-color-bgh);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.offers-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0px 0px;
+  transition: 250ms linear;
+  cursor: pointer;
+}
+
+.offers-item {
+  display: block;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  &:nth-child(3n + 3) {
+    margin-right: 0;
+  }
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+}
+
+.imgg {
+  display: block;
+}
+
+.offers-top-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.offers-top-text {
+  position: absolute;
+  top: 0;
+  background-color: #2196f3;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: 0;
+  height: 100%;
+  transform: translateY(100%);
+  transition: 250ms linear;
+  .offers-item:hover & {
+    transform: translateY(0%);
+  }
+}
+
+.o-i {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  padding: 20px 24px 20px 24px;
+}
+
+.offers-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+
+.offers-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}

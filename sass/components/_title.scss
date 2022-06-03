@@ -1,0 +1,10 @@
+.logo {
+  @include font(26px, 1.19, 700, 0.03em);
+  font-family: "Raleway";
+}
+
+.title {
+  @include font(36px, 1.16, 700, 0.03em);
+  font-style: normal;
+  text-align: center;
+}

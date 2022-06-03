@@ -1,0 +1,23 @@
+@import "./utils/vars";
+@import "./utils/hidden";
+@import "./utils/mixins";
+
+@import "./base/reset";
+@import "./base/common";
+
+@import "./components/title";
+@import "./components/container";
+@import "./components/samecolors.scss";
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/modal-field";
+@import "./components/button";
+
+@import "./layoult/header";
+@import "./layoult/hero";
+@import "./layoult/skills";
+@import "./layoult/about";
+@import "./layoult/team";
+@import "./layoult/clients";
+@import "./layoult/portfolio";
+@import "./layoult/footer";
