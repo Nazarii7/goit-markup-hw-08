@@ -3,8 +3,19 @@
   padding-top: 60px;
   padding-bottom: 60px;
   margin-right: 0px;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
   .container {
-    display: flex;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-around;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: flex-start;
+    }
   }
 }
 
@@ -18,7 +29,14 @@
 }
 
 .footer__address {
-  margin-right: 70px;
+  display: grid;
+  justify-items: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin-right: 70px;
+    margin-bottom: 0px;
+  }
 }
 
 .address__text {
@@ -28,6 +46,7 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--fooret-color-text);
+  margin-top: 0px;
   margin-bottom: 9px;
 }
 
@@ -62,10 +81,18 @@
 }
 
 .join {
-  max-width: 206px;
-  height: 80px;
-  margin: 0;
-  padding: 0;
+  display: grid;
+  justify-items: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    height: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 206px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .join__text {
@@ -77,12 +104,20 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-top: 0px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .join__list {
   display: flex;
   justify-content: center;
   padding: 0;
+  margin: 0px;
 }
 
 .join__item:not(:last-child) {
@@ -115,20 +150,21 @@
 
 .signature {
   position: relative;
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .signature__field {
-  position: absolute;
-  top: -94px;
-  right: 10px;
-  margin-left: 93px;
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: -94px;
+    right: 10px;
+    margin-left: 93px;
+  }
 }
 
 .signature__input {
-  position: absolute;
-  top: 3px;
-  left: -577px;
-  width: 358px;
+  width: 450px;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -138,12 +174,20 @@
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: -10px;
+    left: -577px;
+    width: 358px;
+    height: 50px;
+  }
 }
 
 .signature__text {
-  position: absolute;
-  top: -25px;
-  left: -573px;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -152,12 +196,19 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: -45px;
+    left: -573px;
+  }
 }
 
 .signature__button {
-  position: absolute;
-  top: 3px;
-  right: 7px;
+  // position: absolute;
+  // top: 101%;
+  // right: 28%;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -169,19 +220,35 @@
   padding-right: 62px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-left: 12px;
   color: #ffffff;
   border-radius: 4px;
   border: 2px solid #2196f3;
   background-color: #2196f3;
-  cursor: pointer;
+  transform: translateX(63%);
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: -10px;
+    right: 131px;
+    margin-left: 12px;
+    cursor: pointer;
+  }
 }
 
 .signature__mark {
   position: absolute;
-  top: -59px;
-  right: 34px;
-  margin-top: 13px;
-  margin-left: 10px;
+  top: 0;
+  right: 159px;
+  // height: 100%;
   fill: #ffffff;
+  transform: translateY(39%);
+  @media screen and (min-width: 768px) {
+    right: 305px;
+  }
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: -130px;
+    right: 34px;
+    margin-top: 13px;
+    margin-left: 10px;
+  }
 }

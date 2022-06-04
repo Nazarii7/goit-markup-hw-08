@@ -1,26 +1,67 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__title {
   margin-top: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #212121;
+  @media screen and (min-width: 1200px) {
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+.clients__item {
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+    margin-right: 30px;
+    &:nth-child(2n + 2) {
+      margin-right: 0px;
+    }
+    &:nth-child(n + 5) {
+      margin-bottom: 0px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &:nth-child(n + 4) {
+      margin-bottom: 0px;
+    }
+    &:nth-child(2n + 2) {
+      margin-right: 30px;
+    }
+    &:nth-child(3n + 3) {
+      margin-right: 0px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &:nth-child(3) {
+      margin-right: 30px;
+    }
+  }
 }
+
+// .clients__item:not(:last-child) {
+//   margin-right: 30px;
+// }
 
 .clients__link {
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -28,13 +69,19 @@
   justify-content: center;
   align-items: center;
   margin: 0;
-  transition: 300ms linear;
-  cursor: pointer;
-  &:hover {
-    border: 1px solid #2196f3;
+  @media screen and (min-width: 768px) {
+    width: 226px;
   }
-  &:focus {
-    border: 1px solid #2196f3;
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    transition: 300ms linear;
+    cursor: pointer;
+    &:hover {
+      border: 1px solid #2196f3;
+    }
+    &:focus {
+      border: 1px solid #2196f3;
+    }
   }
 }
 
