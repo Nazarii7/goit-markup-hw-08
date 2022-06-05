@@ -21,7 +21,15 @@
 
 .footer__logo {
   color: var(--fooret-color-logo);
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 .footer__logo--light {

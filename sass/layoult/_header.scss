@@ -1,15 +1,39 @@
 .header {
-  border-bottom: 1px solid #ececec;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  .container {
-    display: flex;
-    align-items: center;
+  @media screen and (min-width: 480px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    height: 60px;
+    border-bottom: 1px solid #ececec;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    height: 80px;
+    .container {
+      display: flex;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    .container {
+      display: flex;
+      align-items: center;
+    }
   }
 }
 
 .header__logo {
-  margin-right: 94px;
+  font-family: "Raleway";
+  display: block;
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 94px;
+  }
 }
 
 .header__logo {
@@ -21,9 +45,19 @@
 }
 
 .menu-list {
-  display: flex;
-  padding: 0px;
-  margin: 0px 0px;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding: 0;
+    margin: 5px 0px;
+    margin-right: 80px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0px;
+    margin: 0px 0px;
+    margin-right: 0px;
+  }
 }
 
 .link-studio--activity::after {
@@ -76,11 +110,27 @@
 }
 
 .header__connect {
-  margin-left: auto;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 21px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-bottom: 0px;
+  }
 }
 
 .connect__icon {
-  margin-right: 10px;
+  @media screen and (min-width: 768px) {
+    margin-right: 8px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
   fill: #757575;
   transition: 250ms linear;
   cursor: pointer;
@@ -100,23 +150,38 @@
 
 .connect__tel,
 .connect__mailto {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: var(--header-color-contact);
   &:hover,
   &:focus {
     color: var(--hover-focus);
   }
+  @media screen and (min-width: 768px) {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--header-color-contact);
+    &:hover,
+    &:focus {
+      color: var(--hover-focus);
+    }
+  }
 }
 
 .connect__mailto {
-  margin-right: 30px;
-  &:hover,
-  &:focus {
-  color: var(--hover-focus);
+  @media screen and (min-width: 768px) {
+    &:hover,
+    &:focus {
+      color: var(--hover-focus);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
 }
-}
-
-

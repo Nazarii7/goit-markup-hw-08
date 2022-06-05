@@ -58,13 +58,9 @@ body {
   font-weight: 700;
   letter-spacing: 0.03em;
   font-family: "Raleway";
-  display: flex;
-  justify-content: center;
 }
 @media screen and (min-width: 1200px) {
   .logo {
-    display: flex;
-    justify-content: flex-start;
     font-size: 26px;
     line-height: 1.19;
     font-weight: 700;
@@ -309,18 +305,50 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.header {
-  border-bottom: 1px solid #ececec;
-  padding-top: 24px;
-  padding-bottom: 25px;
+@media screen and (min-width: 480px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    height: 60px;
+    border-bottom: 1px solid #ececec;
+  }
 }
-.header .container {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    height: 80px;
+  }
+  .header .container {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+  .header .container {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header__logo {
-  margin-right: 94px;
+  font-family: "Raleway";
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 94px;
+  }
 }
 
 .header__logo {
@@ -331,10 +359,20 @@ body {
   color: var(--header-color-word);
 }
 
-.menu-list {
-  display: flex;
-  padding: 0px;
-  margin: 0px 0px;
+@media screen and (min-width: 768px) {
+  .menu-list {
+    display: flex;
+    padding: 0;
+    margin: 5px 0px;
+    margin-right: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-list {
+    padding: 0px;
+    margin: 0px 0px;
+    margin-right: 0px;
+  }
 }
 
 .link-studio--activity::after {
@@ -384,15 +422,35 @@ body {
   opacity: 1;
 }
 
-.header__connect {
-  margin-left: auto;
+@media screen and (min-width: 768px) {
+  .header__connect {
+    margin-bottom: 21px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__connect {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-bottom: 0px;
+  }
 }
 
 .connect__icon {
-  margin-right: 10px;
   fill: #757575;
   transition: 250ms linear;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .connect__icon {
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .connect__icon {
+    margin-right: 10px;
+  }
 }
 .connect__mailto:hover .connect__icon {
   fill: currentColor;
@@ -409,10 +467,6 @@ body {
 
 .connect__tel,
 .connect__mailto {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: var(--header-color-contact);
 }
 .connect__tel:hover, .connect__tel:focus,
@@ -420,12 +474,40 @@ body {
 .connect__mailto:focus {
   color: var(--hover-focus);
 }
-
+@media screen and (min-width: 768px) {
+  .connect__tel,
 .connect__mailto {
-  margin-right: 30px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+  }
 }
-.connect__mailto:hover, .connect__mailto:focus {
-  color: var(--hover-focus);
+@media screen and (min-width: 1200px) {
+  .connect__tel,
+.connect__mailto {
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--header-color-contact);
+  }
+  .connect__tel:hover, .connect__tel:focus,
+.connect__mailto:hover,
+.connect__mailto:focus {
+    color: var(--hover-focus);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .connect__mailto:hover, .connect__mailto:focus {
+    color: var(--hover-focus);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .connect__mailto {
+    margin-right: 30px;
+  }
 }
 
 .hero {
@@ -1117,7 +1199,19 @@ body {
 
 .footer__logo {
   color: var(--fooret-color-logo);
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 .footer__logo--light {

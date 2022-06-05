@@ -1,13 +1,9 @@
 .logo {
   @include font(24px, 1.16, 700, 0.03em);
   font-family: "Raleway";
-  display: flex;
-  justify-content: center;
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: flex-start;
     @include font(26px, 1.19, 700, 0.03em);
   }
 }
