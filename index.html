@@ -31,13 +31,15 @@
         <a class="logo header__logo link" href=""
           >Web<span class="logo__word--dark">Studio</span></a
         >
-        <nav class="navigation">
-          <button type="button">
-            <svg width="40" height="40">
-              <use href="./images/close_40px.svg"></use>
-              <use href="./images/menu_40px.svg"></use>
+        <button type="button" class="header-menu-open" data-menu-button>
+            <svg 
+            width="40" 
+            height="40">
+              <use class="icon-menu" href="./images/menu.svg#icon-menu"></use>
+              <!-- <use class="icon-cross" href="./images/close.svg#icon-close"></use> -->
             </svg>
           </button>
+        <nav class="navigation">
           <ul class="menu-list list">
             <li class="menu-list__item">
               <a href="index.html" class="menu-list__link link link-studio--activity">Студия</a>
@@ -63,6 +65,42 @@
             </svg>
             +38 096 111 11 11</a
           >
+      </div>
+      <div class="mob-menu">
+        <div class="container">
+        <button type="button" class="header-menu-close" data-menu-button>
+          <svg 
+            width="40" 
+            height="40">
+              <use class="icon-cross" href="./images/close.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-list__item">
+              <a href="index.html" class="mob-menu__link link link-studio--activity">Студия</a>
+            </li>
+            <li class="mob-menu-list__item">
+              <a href="./portfolio.html" class="mob-menu-list__link link">Портфолио</a>
+            </li>
+            <li class="mob-menu-list__item">
+              <a href="" class="mob-menu-list__link link">Контакты</a>
+            </li>
+          </ul>
+          <div class="mob-connect">
+          <a class="mob-connect__mailto link" href="mailto:info@devstudio.com">
+            <svg class="mob-connect__icon" width="16" height="12">
+              <use href="./images/icons2.svg#icon-envelope-1"></use>
+            </svg>
+            info@devstudio.com</a
+          >
+          <a class="mob-connect__tel link" href="tel:+380961111111">
+            <svg class="mob-connect__icon" width="10" height="16">
+              <use href="./images/icons2.svg#icon-smartphone-1"></use>
+            </svg>
+            +38 096 111 11 11</a
+          >
+          </div>
+      </div>
       </div>
     </header>
     <main>

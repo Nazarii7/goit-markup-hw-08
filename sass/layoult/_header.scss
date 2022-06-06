@@ -2,8 +2,10 @@
   @media screen and (min-width: 480px) {
     padding-top: 16px;
     padding-bottom: 16px;
-    height: 60px;
     border-bottom: 1px solid #ececec;
+    .container {
+      display: flex;
+    }
   }
   @media screen and (min-width: 768px) {
     padding-top: 26px;
@@ -26,7 +28,9 @@
 .header__logo {
   font-family: "Raleway";
   display: block;
+  margin-top: 10px;
   @media screen and (min-width: 768px) {
+    margin-top: 0px;
     margin-right: 88px;
   }
   @media screen and (min-width: 1200px) {
@@ -44,8 +48,46 @@
   color: var(--header-color-word);
 }
 
+.header-menu-open {
+  display: block;
+  margin-left: auto;
+  margin-top: 3px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mob-menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffff;
+  width: 100vw;
+  height: 100vw;
+  .container {
+    display: block;
+  }
+}
+
+// .header-button .icon-cross {
+//   display: none;
+// }
+
+// .header-button.is-open .icon-cross {
+//   display: block;
+// }
+
+// .header-button.is-open .icon-menu {
+//   display: none;
+// }
+
 .menu-list {
   @media screen and (min-width: 480px) {
+    display: none;
   }
   @media screen and (min-width: 768px) {
     display: flex;
@@ -111,8 +153,10 @@
 
 .header__connect {
   @media screen and (min-width: 480px) {
+    display: none;
   }
   @media screen and (min-width: 768px) {
+    display: block;
     margin-bottom: 21px;
   }
   @media screen and (min-width: 1200px) {
