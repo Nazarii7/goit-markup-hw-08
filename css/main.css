@@ -73,12 +73,20 @@ body {
 }
 
 .title {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   font-weight: 700;
   letter-spacing: 0.03em;
   font-style: normal;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.17;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
 }
 
 .container {
@@ -131,11 +139,21 @@ body {
 
 .modal {
   position: relative;
-  width: 528px;
-  height: 581px;
-  padding: 40px;
-  background-color: #ffffff;
-  border-radius: 4px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 4px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .button-close {
@@ -170,6 +188,14 @@ body {
   margin-top: 0px;
   margin-bottom: 12px;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    font-size: 20px;
+    line-height: 1.75;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
 }
 
 .modal-field {
@@ -238,17 +264,27 @@ body {
   border: 1px solid #2196f3;
 }
 
-.check-text {
-  font-size: 14px;
-  line-height: 1.71;
-  font-weight: 400;
-  letter-spacing: 0.03em;
-  font-style: normal;
-  color: #757575;
-  align-items: center;
-  display: flex;
-  margin-bottom: 30px;
-  margin-left: 10px;
+@media screen and (min-width: 480px) {
+  .check-text {
+    font-size: 12px;
+    line-height: 1.16;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    color: #757575;
+    align-items: center;
+    display: flex;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: 1.71;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    margin-left: 10px;
+  }
 }
 .check-text:before {
   content: "";
@@ -289,18 +325,27 @@ body {
   line-height: 1.87;
   font-weight: 700;
   letter-spacing: 0.06em;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  min-width: 200px;
-  height: 50px;
-  font-family: inherit;
-  color: var(--hero-color-btn);
-  background-color: var(--hero-color-bgh);
-  border-radius: 4px;
-  border-width: 0;
-  transition: 250ms;
-  cursor: pointer;
+}
+@media screen and (min-width: 480px) {
+  .button-text {
+    font-size: 16px;
+    line-height: 1.875;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 200px;
+    height: 50px;
+    font-family: inherit;
+    color: var(--hero-color-btn);
+    background-color: var(--hero-color-bgh);
+    border-radius: 4px;
+    border-width: 0;
+    padding: 0;
+    transition: 250ms;
+    cursor: pointer;
+  }
 }
 .button-text:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -736,13 +781,23 @@ body {
   max-width: 480px;
   height: 400px;
   margin: 0 auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/meeting.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/meeting-mobile.jpg);
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/meeting-m-2x.jpg);
+  }
 }
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
     margin: 0 auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/meeting.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/meeting-tablet.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/meeting-t-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -753,6 +808,11 @@ body {
     height: 600px;
     margin: 0 auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/meeting.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/meeting-d-2x.jpg);
   }
 }
 
@@ -863,7 +923,12 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  .skills__item:nth-child(2n) {
+  .skills__item:nth-child(n+2) {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .skills__item::nth-child(3) {
     margin-bottom: 0px;
   }
 }
@@ -911,7 +976,7 @@ body {
   text-transform: uppercase;
   display: flex;
   justify-content: center;
-  margin: 0px 0px 10px 0px;
+  margin: 30px 0px 10px 0px;
 }
 @media screen and (min-width: 768px) {
   .skills__title {
@@ -1202,6 +1267,11 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    height: 92px;
+  }
+}
 
 @media screen and (min-width: 480px) {
   .clients__item {
@@ -1286,6 +1356,12 @@ body {
   .offer-list {
     justify-content: center;
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .offer-list {
+    padding-top: 94px;
+    margin-top: 0px;
   }
 }
 
@@ -1410,13 +1486,21 @@ body {
   border: 1px solid #eeeeee;
   padding: 20px 24px 20px 24px;
 }
+@media screen and (min-width: 480px) {
+  .o-i--height {
+    height: 109px;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    padding: 20px 24px 20px 24px;
+  }
+}
 @media screen and (min-width: 768px) {
-  .o-i {
+  .o-i--height {
     height: 146px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .o-i {
+  .o-i--height {
     height: 110px;
   }
 }
@@ -1541,6 +1625,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .join {
+    display: block;
     max-width: 206px;
     height: 80px;
     margin: 0;

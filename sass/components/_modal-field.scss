@@ -59,13 +59,20 @@
 }
 
 .check-text {
-  @include font(14px, 1.71, 400, 0.03em);
-  font-style: normal;
-  color: #757575;
-  align-items: center;
-  display: flex;
-  margin-bottom: 30px;
-  margin-left: 10px;
+  @media screen and (min-width: 480px) {
+    @include font(12px, 1.16, 400, 0.03em);
+    font-style: normal;
+    color: #757575;
+    align-items: center;
+    display: flex;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    @include font(14px, 1.71, 400, 0.03em);
+    margin-left: 10px;
+  }
   &:before {
     content: "";
     width: 16px;

@@ -13,7 +13,16 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/meeting.jpg);
+    url(../images/meeting-mobile.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/meeting-m-2x.jpg);
+  }
   @media screen and (min-width: 768px) {
     max-width: 768px;
     margin: 0 auto;
@@ -21,7 +30,16 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/meeting.jpg);
+      url(../images/meeting-tablet.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/meeting-t-2x.jpg);
+    }
   }
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
@@ -34,6 +52,15 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/meeting.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/meeting-d-2x.jpg);
+    }
   }
 }
 
