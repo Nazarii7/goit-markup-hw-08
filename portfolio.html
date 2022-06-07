@@ -27,6 +27,13 @@
         <a class="logo header__logo link" href=""
           >Web<span class="logo__word--dark">Studio</span></a
         >
+          <button type="button" class="menu-open-btn " menu-open-btn>
+            <svg 
+            width="40" 
+            height="40">
+              <use class="icon-menu" href="./images/menu.svg#icon-menu"></use>
+            </svg>
+          </button>
         <nav class="navigation">
           <ul class="menu-list list">
             <li class="menu-list__item">
@@ -53,6 +60,48 @@
             </svg>
             +38 096 111 11 11</a
           >
+      </div>
+       <div class="mob-menu is-hidden" mob-menu>
+        <div class="container">
+          <div class="mob-m">
+        <button type="button" class="menu-close-btn" menu-close-btn>
+          <svg 
+            width="40" 
+            height="40">
+              <use class="icon-cross" href="./images/close.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-list__item">
+              <a href="index.html" class="mob-menu-list__link link">Студия</a>
+            </li>
+            <li class="mob-menu-list__item">
+              <a href="./portfolio.html" class="mob-menu-list__link link link-portfolio--menu-activity">Портфолио</a>
+            </li>
+            <li class="mob-menu-list__item">
+              <a href="" class="mob-menu-list__link link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mob-b">
+          <div class="mob-connect">
+          <a class="mob-connect__tel link" href="tel:+380961111111">
+            +38 096 111 11 11</a
+          >
+          <a class="mob-connect__mailto link" href="mailto:info@devstudio.com">
+            info@devstudio.com</a
+          >
+          </div>
+          <div class="mob-soc">
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-list__item">Instagram</li>
+              <li class="mob-soc-list__item">Twitter</li>
+              <li class="mob-soc-list__item">Facebook</li>
+              <li class="mob-soc-list__item">LinkedIn</li>
+            </ul>
+            </div>
+            </div>
+      </div>
       </div>
     </header>
     <main>
@@ -323,5 +372,6 @@
         </form>
       </section>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

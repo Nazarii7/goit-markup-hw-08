@@ -55,6 +55,14 @@
   padding: 0;
   border: 0;
   background-color: transparent;
+  transition: 400ms;
+  cursor: pointer;
+  &:hover .icon-menu {
+    fill: #2196f3;
+  }
+  &:focus .icon-menu {
+    fill: #2196f3;
+  }
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -66,6 +74,14 @@
   padding: 0;
   border: 0;
   background-color: transparent;
+  transition: 400ms;
+  cursor: pointer;
+  &:hover .icon-cross {
+    fill: #2196f3;
+  }
+  &:focus .icon-cross {
+    fill: #2196f3;
+  }
 }
 
 .mob-menu {
@@ -106,6 +122,34 @@
   line-height: 1.175;
   letter-spacing: 0.02em;
   color: #212121;
+  &:hover {
+    color: #2196f3;
+  }
+  &:focus {
+    color: #2196f3;
+  }
+}
+
+.link-studio--menu-activity {
+  content: "";
+  display: inline-flex;
+  flex-direction: column-reverse;
+  width: 31%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  transition: opacity 250ms;
+}
+
+.link-portfolio--menu-activity {
+  content: "";
+  display: inline-flex;
+  flex-direction: column-reverse;
+  width: 50%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  transition: opacity 250ms;
 }
 
 .mob-connect__mailto {
@@ -116,6 +160,12 @@
   color: #757575;
   display: block;
   margin-top: 32px;
+  &:hover {
+    color: #2196f3;
+  }
+  &:focus {
+    color: #2196f3;
+  }
 }
 
 .mob-connect__tel {
@@ -124,6 +174,12 @@
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
+  &:hover {
+    color: #2196f3;
+  }
+  &:focus {
+    color: #2196f3;
+  }
 }
 
 .mob-soc-list {
@@ -140,6 +196,12 @@
   position: relative;
   &:not(:last-child) {
     margin-right: 20px;
+  }
+  &:hover {
+    color: #2196f3;
+  }
+  &:focus {
+    color: #2196f3;
   }
   &:not(:last-child)::after {
     display: inline-block;

@@ -1,44 +1,96 @@
 .hero {
   background: var(--hero-color-bg);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: rgba(47, 48, 58, 0.4);
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   margin: 0 auto;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/meeting.jpg);
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    margin: 0 auto;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/meeting.jpg);
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/meeting.jpg);
+  }
 }
 
 .hero__title {
-  width: 696px;
-  height: 120px;
+  width: 360px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--hero-color-title);
-  margin: 0px 0px 30px 235px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    height: 120px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--hero-color-title);
+    margin: 0px 0px 30px 235px;
+  }
 }
 
 .hero__btn {
-  min-width: 200px;
   height: 50px;
-  font-family: inherit;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.875px;
+  display: flex;
+  align-items: center;
+  text-align: center;
   letter-spacing: 0.06em;
   color: var(--hero-color-btn);
   background-color: var(--hero-color-bgh);
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 4px;
   border-width: 0;
-  cursor: pointer;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 200px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--hero-color-btn);
+    cursor: pointer;
+  }
 }

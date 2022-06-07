@@ -374,6 +374,14 @@ body {
   padding: 0;
   border: 0;
   background-color: transparent;
+  transition: 400ms;
+  cursor: pointer;
+}
+.menu-open-btn:hover .icon-menu {
+  fill: #2196f3;
+}
+.menu-open-btn:focus .icon-menu {
+  fill: #2196f3;
 }
 @media screen and (min-width: 768px) {
   .menu-open-btn {
@@ -387,6 +395,14 @@ body {
   padding: 0;
   border: 0;
   background-color: transparent;
+  transition: 400ms;
+  cursor: pointer;
+}
+.menu-close-btn:hover .icon-cross {
+  fill: #2196f3;
+}
+.menu-close-btn:focus .icon-cross {
+  fill: #2196f3;
 }
 
 .mob-menu {
@@ -428,6 +444,34 @@ body {
   letter-spacing: 0.02em;
   color: #212121;
 }
+.mob-menu-list__link:hover {
+  color: #2196f3;
+}
+.mob-menu-list__link:focus {
+  color: #2196f3;
+}
+
+.link-studio--menu-activity {
+  content: "";
+  display: inline-flex;
+  flex-direction: column-reverse;
+  width: 31%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  transition: opacity 250ms;
+}
+
+.link-portfolio--menu-activity {
+  content: "";
+  display: inline-flex;
+  flex-direction: column-reverse;
+  width: 50%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  transition: opacity 250ms;
+}
 
 .mob-connect__mailto {
   font-weight: 500;
@@ -438,6 +482,12 @@ body {
   display: block;
   margin-top: 32px;
 }
+.mob-connect__mailto:hover {
+  color: #2196f3;
+}
+.mob-connect__mailto:focus {
+  color: #2196f3;
+}
 
 .mob-connect__tel {
   font-weight: 500;
@@ -445,6 +495,12 @@ body {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
+}
+.mob-connect__tel:hover {
+  color: #2196f3;
+}
+.mob-connect__tel:focus {
+  color: #2196f3;
 }
 
 .mob-soc-list {
@@ -463,6 +519,12 @@ body {
 }
 .mob-soc-list__item:not(:last-child) {
   margin-right: 20px;
+}
+.mob-soc-list__item:hover {
+  color: #2196f3;
+}
+.mob-soc-list__item:focus {
+  color: #2196f3;
 }
 .mob-soc-list__item:not(:last-child)::after {
   display: inline-block;
@@ -666,42 +728,90 @@ body {
 .hero {
   background: var(--hero-color-bg);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: rgba(47, 48, 58, 0.4);
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   margin: 0 auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/meeting.jpg);
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/meeting.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/meeting.jpg);
+  }
+}
 
 .hero__title {
-  width: 696px;
-  height: 120px;
+  width: 360px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--hero-color-title);
-  margin: 0px 0px 30px 235px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    height: 120px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--hero-color-title);
+    margin: 0px 0px 30px 235px;
+  }
 }
 
 .hero__btn {
-  min-width: 200px;
   height: 50px;
-  font-family: inherit;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.875px;
+  display: flex;
+  align-items: center;
+  text-align: center;
   letter-spacing: 0.06em;
   color: var(--hero-color-btn);
   background-color: var(--hero-color-bgh);
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 4px;
   border-width: 0;
-  cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .hero__btn {
+    min-width: 200px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--hero-color-btn);
+    cursor: pointer;
+  }
 }
 
 .skills {
