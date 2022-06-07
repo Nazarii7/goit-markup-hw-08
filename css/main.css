@@ -44,6 +44,10 @@ body {
   height: 100%;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .link {
   text-decoration: none;
 }
@@ -363,7 +367,7 @@ body {
   color: var(--header-color-word);
 }
 
-.header-menu-open {
+.menu-open-btn {
   display: block;
   margin-left: auto;
   margin-top: 3px;
@@ -372,9 +376,17 @@ body {
   background-color: transparent;
 }
 @media screen and (min-width: 768px) {
-  .header-menu-open {
+  .menu-open-btn {
     display: none;
   }
+}
+
+.menu-close-btn {
+  display: block;
+  margin-left: auto;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
 }
 
 .mob-menu {
@@ -385,9 +397,108 @@ body {
   background-color: white;
   width: 100vw;
   height: 100vw;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.mob-menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 .mob-menu .container {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.mob-menu-list {
+  padding: 0;
+}
+
+.mob-menu-list__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu-list__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.mob-connect__mailto {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
   display: block;
+  margin-top: 32px;
+}
+
+.mob-connect__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mob-soc-list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.mob-soc-list__item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  position: relative;
+}
+.mob-soc-list__item:not(:last-child) {
+  margin-right: 20px;
+}
+.mob-soc-list__item:not(:last-child)::after {
+  display: inline-block;
+  left: 100%;
+  transform: translateX(10px);
+  content: "";
+  width: 1px;
+  height: 22px;
+  border-radius: 2px;
+  background-color: #c4c4c4;
+}
+@media screen and (max-width: 399px) {
+  .mob-soc-list__item:not(:last-child)::after {
+    display: none;
+  }
+}
+.mob-soc-list__item::before {
+  display: inline-block;
+  position: absolute;
+  transform: translateX(-10px);
+  content: "";
+  width: 1px;
+  height: 22px;
+  border-radius: 2px;
+  background-color: #c4c4c4;
+}
+@media screen and (min-width: 400px) {
+  .mob-soc-list__item::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mob-soc-list__item {
+    margin-bottom: 10px;
+    width: 33%;
+  }
 }
 
 @media screen and (min-width: 480px) {
